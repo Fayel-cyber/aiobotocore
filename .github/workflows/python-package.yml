@@ -65,6 +65,7 @@ jobs:
            python3.8 -m venv venv38 && \
            source venv38/bin/activate && \
            python -m pip install --upgrade pip && \
+           apt install make && \
            pip install -U setuptools pip && \
            pip install -U pipenv codecov && \
            pipenv lock && \
